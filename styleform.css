@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('img/1.jpg'); /* Arkaplan resminin yolunu belirtin */
+    background-size: cover;
+}
+
+.reservation-form {
+    max-width: 500px; /* Formun genişliğini azalttık */
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-inline {
+    display: flex;
+    flex-wrap: wrap; /* İçeriğin taşmasını önlemek için flex-wrap ekledik */
+}
+
+.form-inline input {
+    width: calc(50% - 5px); /* Giriş kutularının genişliğini azalttık */
+    margin-right: 10px; /* Boşluk ekledik */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Giriş kutularının padding ve border'ını içeriğin genişliğine dahil ettik */
+}
+
+.time-slots {
+    display: flex;
+    justify-content: space-around;
+}
+
+.time-slots label {
+    margin-right: 10px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(83, 6, 6, 0.833);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background-color: rgba(83, 6, 6, 0.833);
+}

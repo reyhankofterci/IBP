@@ -1,0 +1,1142 @@
+/*color: rgb(34,34,50);*/
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.navbar .logo img {
+    width: 110px;
+
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu ul li {
+    margin-right: 35px;
+}
+
+.menu li a {
+    color: rgb(83, 6, 6);
+    font-weight: 600;
+    font-size: 22px;
+}
+
+/*ROW*/
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.col-2 {
+    flex-basis: 50%;
+}
+
+.container .box {
+    width: 500px;
+    height: 500px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.container .box img {
+    width: 131%;
+    height: 131%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    mix-blend-mode: screen;
+}
+
+.container .box video {
+    width: 130%;
+    height: 130%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.col-2 h1 {
+    font-size: 3rem;
+    color: rgb(83, 6, 6);
+    margin-top: 30px;
+}
+
+.col-2 span {
+    font-size: 6rem;
+    margin-left: 80px !important;
+    line-height: 60px;
+    margin: 20px 0;
+}
+
+.col-2 p {
+    margin: 15px 00;
+    font-weight: 400;
+}
+
+.btn {
+    display: inline-block;
+    color: white;
+    background-color: rgb(83, 6, 6);
+    padding: 8px 30px;
+    border-radius: 30px;
+    margin-top: 5px;
+    margin-left: 70%;
+}
+.btn:hover {
+    background-color: rgba(83, 6, 6, 0.833); 
+    transform: scale(1.05); 
+}
+
+
+/*ABOUT START*/
+
+.about {
+    margin-bottom: 150px;
+}
+
+.about-title {
+    margin: 60px 0;
+}
+
+.about-title h2 {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: rgb(83, 6, 6);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.about-title h2::after {
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: rgb(83, 6, 6);
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.about-img {
+    width: 40%;
+}
+
+.about-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-text {
+    width: 40%;
+}
+
+h4 {
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(94, 93, 93);
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 0.5rem;
+    font-weight: 100;
+}
+
+#aboutikon {
+    color: rgb(236, 236, 132);
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.about-text {
+    font-size: 15px;
+    text-align: center;
+    color: rgb(92, 92, 92);
+}
+
+/*ABOUT FINISH*/
+
+/*SPORTS BASLIK START*/
+
+.baslıkspor {
+    margin: 60px 0;
+}
+
+.baslıkspor h2 {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: rgb(83, 6, 6);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.baslıkspor h2::after {
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: rgb(83, 6, 6);
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+
+/*SPORTS BASLIK FINISH*/
+
+/*SPORTS START*/
+
+.sports {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sports-item {
+    width: 25%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.sports-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(34, 34, 50);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    opacity: 0.8;
+    color: #fff;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+.sports-item:hover .overlay {
+    top: 0;
+}
+
+.sports-item:hover img {
+    transform: scale(1.1);
+}
+
+/*SPORTS FINISH*/
+
+
+/*TRAINERS BASLIK START*/
+.baslıktrainers {
+    margin: 60px 0;
+}
+
+.baslıktrainers h2 {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: rgb(83, 6, 6);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.baslıktrainers h2::after {
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: rgb(83, 6, 6);
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+
+/*TRAINERS BASLIK FINISH*/
+
+
+/*TRAINERS START*/
+
+
+.swiper {
+    width: 100%;
+}
+
+.swiper-wrapper {
+    width: 100%;
+    height: 35em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 20em;
+    height: 90%;
+    background-color: white;
+    border-radius: 2em;
+    box-shadow: 0 0 2em rgb(0, 0, 0, .2);
+    padding: 2em 1em;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.card-img {
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    border: 5px solid rgb(83, 6, 6);
+    box-shadow: 0 0 2em;
+    padding: 3px;
+    margin-bottom: 2em;
+
+
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    position: relative;
+    top: .2em;
+}
+
+.card-name {
+    color: rgb(83, 6, 6);
+}
+
+.card-text {
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 1em 0;
+    color: rgb(94, 93, 93);
+}
+
+.card-button {
+    background-color: rgb(83, 6, 6);
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+    padding: .5em;
+    border-radius: .5em;
+    margin-top: .5em;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.card-button:hover {
+    transform: scale(1.1);
+    background-color: rgba(83, 6, 6, 0.833); 
+}
+
+
+
+/*TRAINERS FINISH*/
+
+
+/*CONTACT START*/
+
+.contact h2 {
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+    color: rgb(83, 6, 6);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.contact h2::after {
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: rgb(83, 6, 6);
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+
+}
+
+.contact-content {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    flex-basis: 33%;
+    margin-bottom: 100px;
+    flex-direction: column;
+
+}
+
+.contact-item i {
+    font-size: 25px;
+    margin-bottom: 30px;
+    color: rgb(34, 34, 50);
+}
+
+.contact-item p {
+    font-size: 14px;
+    line-height: 33px;
+}
+
+
+/*CONTACT MESAJ*/
+body {
+
+    line-height: 1.;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#iletisim {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+#formgroup {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#solform,
+#sagform {
+    display: flex;
+    flex-direction: column;
+    width: 49.5%;
+}
+
+#solform input,
+#sagform input,
+.form-control,
+input[type="submit"] {
+    width: 100%;
+    padding: 6px;
+    margin: 6px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form-control {
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background: rgb(83, 6, 6);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: rgb(83, 6, 6);
+    transform: scale(1.01);
+}
+
+@media (max-width: 768px) {
+
+    #solform,
+    #sagform {
+        width: 100%;
+    }
+}
+
+/*CONTACT FINISH*/
+
+
+/*FOOTER START*/
+.footer h2{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: rgb(83, 6, 6);
+    font-size: 30px;
+    font-weight: 600;
+    padding: 60px;
+}
+.footer h2::after {
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: rgb(83, 6, 6);
+    margin: 0 auto;
+    display: block;
+    margin-top:25px;
+}
+
+.footer{
+    background-color:rgba(0, 0, 0, 0.818) ;
+    
+
+}
+
+.footer-copyright{
+    color: #fff;
+    text-align: center;
+    flex-basis: 55%;
+    font-size: 13px;
+    margin-bottom: 40px;
+    text-align: center;
+    
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.footer-social i{
+    color: #fff;
+    margin-bottom: 60px;
+    font-size: 25px;
+    padding: 0 60px;
+    
+
+}
+
+.footer-social:first-child{
+    margin-left: 50px ;
+}
+/*FOOTER FINISH*/
+
+
+
+/*RESPONSIVE YAPIYOM*/
+
+/*header menu responsive*/
+
+#menu-icon {
+    font-size: 40px;
+    display: none;
+    margin-left: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+    .menu ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        top: 150px;
+        left: 0;
+        background-color: grey;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height .5s;
+    }
+
+    .menu ul li {
+        margin-right: 50px;
+        margin-top: 1px;
+        margin-bottom: 1px;
+    }
+
+    .menu ul li a {
+        color: #fff;
+    }
+
+    .menu #menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+/*header this is life responsive*/
+@media screen and (max-width: 1200px) {
+    .row {
+        flex-direction: column;
+        /* Sütun şeklinde sırala */
+        align-items: center;
+        /* Merkeze hizala */
+    }
+
+    .col-2 {
+        flex-basis: 100%;
+        /* Tam genişlik */
+    }
+
+    .container .box {
+        margin-top: 40px;
+        /* Kutunun üst boşluğunu artır */
+        margin-right: 100px;
+    }
+}
+
+/*about responsive*/
+
+
+
+
+@media screen and (max-width: 1100px) {
+
+    .about-img {
+        width: 40%;
+        margin-bottom: 30px;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+}
+
+
+
+
+/* sports responsive*/
+
+
+
+@media screen and (max-width: 1100px) {
+    .sports .sports-item {
+        flex-basis: 50%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .sports .sports-item {
+        flex-basis: 100%;
+    }
+
+}
+
+/* contact responsive*/
+
+@media screen and (max-width: 900px) {
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .contact-item {
+        margin-top: 30px;
+    }
+}
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+/* SPORTS:HTML PART*/
+
+/*Sports and trainers header part start*/
+
+.containers {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.headers {
+    width: 100%;
+    height: 25vh;
+}
+
+.navbars {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.navbars .logos img {
+    width: 110px;
+
+}
+
+.menus ul {
+    display: flex;
+}
+
+.menus ul li {
+    margin-right: 35px;
+}
+
+.menus li a {
+    color: rgb(83, 6, 6);
+    font-weight: 600;
+    font-size: 22px;
+}
+
+/*Sports and trainers header part finish*/
+
+
+/*MAIN START*/
+
+.main1 {
+    margin-bottom: 10px;
+}
+
+.main1-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.main1-img {
+    width: 40%;
+    
+}
+
+.main1-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid rgba(0, 0, 0, 0.498); 
+    border-radius: 8px; /* Kenarları yuvarlar */
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.498); 
+    transition: transform 0.4s ease, box-shadow 0.4s ease; 
+}
+
+.main1-img img:hover {
+    transform: scale(1.09); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.main1-text {
+    width: 40%;
+}
+
+h4 {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: rgb(83, 6, 6);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#main1ikon {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.main1-text {
+    font-size: 15px;
+    text-align:center;
+    color: rgb(92, 92, 92);
+}
+.icon-text {
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    gap: 10px; /* Icon ile paragraf arasındaki boşluğu ayarlamak için */
+}
+
+.icon-text #mainikon {
+    margin: 0;
+    color: rgb(109, 20, 20);
+    font-size: 20;
+}
+
+.icon-text p {
+    margin: 0;
+}
+#mainikon i {
+    font-size: 24px; 
+    width: 30px; 
+    height: 30px;
+    border: 2px solid; 
+    border-radius: 50%;
+}
+.main1-button {
+    background-color: rgb(83, 6, 6);
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+    padding: 0.5em 1.5em;
+    border-radius: .5em;
+    margin-top: .5em;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.main1-button:hover {
+    background-color: rgba(83, 6, 6, 0.833); 
+    transform: scale(1.05); 
+}
+
+/*MAIN FINISH*/
+
+
+
+/* SPORTS CARD SLIDER START */
+.owl-carousel {
+    padding: 0; /* Gereksiz padding'i kaldır */
+    margin: 0; /* Gereksiz margin'i kaldır */
+}
+
+.owl-carousel .owl-item {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* İçerikleri yukarı hizala */
+    margin: 0; /* Gereksiz margin'i kaldır */
+    padding-bottom: 0; /* Alt padding'i kaldır */
+}
+
+.owl-carousel .sportcard {
+    width: 20em;
+    height: auto; /* Kartın içeriğe göre otomatik yüksekliği */
+    background-color: white;
+    border-radius: 2em;
+    box-shadow: 0 0 2em rgba(0, 0, 0, .2);
+    padding: 1.5em 1em; /* Padding'i azaltın */
+    margin: 0 5px; /* Kartlar arasındaki yatay marjı ayarlayın */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.owl-carousel .sportcard-img {
+    width: 18em;
+    height: 18em;
+    padding: 3px;
+    margin-bottom: 1em; /* Alt marjı azalt */
+}
+
+.owl-carousel .sportcard-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    object-fit: cover;
+}
+
+.owl-carousel .sportcard-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    position: relative;
+    top: .2em;
+}
+
+.owl-carousel .sportcard-name {
+    color: rgb(83, 6, 6);
+    display: block;
+}
+
+.owl-carousel .sportcard-text {
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 0.5em 0; /* Marjı azaltın */
+    color: rgb(94, 93, 93);
+}
+
+.owl-carousel .sportcard-button {
+    background-color: rgb(83, 6, 6);
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+    padding: .5em;
+    border-radius: .5em;
+    margin-top: .5em;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.owl-carousel .sportcard-button:hover {
+    transform: scale(1.1);
+    background-color: rgba(83, 6, 6, 0.833); 
+}
+
+.owl-stage-outer {
+    padding-bottom: 0; /* Alt padding'i kaldır */
+}
+
+.owl-stage {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* İçerikleri yukarı hizala */
+    margin-bottom: 0; /* Gereksiz alt marjı kaldır */
+}
+
+
+
+/*SPORTS CARD SLIDER FINISH*/
+
+
+
+/*--------------------------------------------------------------------------------------*/
+/* TRAINERS.HTML PART*/
+
+
+/*MAIN TRAINERS START*/
+
+.tmain1 {
+    margin-bottom: 150px;
+}
+
+.tmain1-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.tmain1-img {
+    width: 40%;
+    
+}
+
+.tmain1-img img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    border: 1px solid rgba(0, 0, 0, 0.498); 
+    border-radius: 8px; /* Kenarları yuvarlar */
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.498); 
+    transition: transform 0.4s ease, box-shadow 0.4s ease; 
+}
+
+.tmain1-img img:hover {
+    transform: scale(1.09); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.tmain1-text {
+    width: 40%;
+}
+
+h4 {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: rgb(83, 6, 6);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#tmain1ikon {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.tmain1-text {
+    font-size: 15px;
+    text-align:center;
+    color: rgb(92, 92, 92);
+}
+.ticon-text {
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    gap: 10px; /* Icon ile paragraf arasındaki boşluğu ayarlamak için */
+}
+
+.ticon-text #tmainikon {
+    margin: 0;
+    color: rgb(109, 20, 20);
+    font-size: 20;
+}
+
+.ticon-text p {
+    margin: 0;
+}
+#tmainikon i {
+    font-size: 24px; 
+    width: 30px; 
+    height: 30px;
+    border: 2px solid; 
+    border-radius: 50%;
+}
+.tmain1-button {
+    background-color: rgb(83, 6, 6);
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+    padding: 0.5em 1.5em;
+    border-radius: .5em;
+    margin-top: .5em;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.tmain1-button:hover {
+    background-color: rgba(83, 6, 6, 0.833); 
+    transform: scale(1.05); 
+}
+
+/*MAIN TARINERS FINISH*/
+
+/*TRAINERS CARD SLIDER START*/
+
+.owl-carousel .owl-item {
+    display: flex;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.owl-carousel .trainercard {
+    width: 20em;
+    height: 90%;
+    background-color: white;
+    border-radius: 2em;
+    box-shadow: 0 0 2em rgba(0, 0, 0, .2);
+    padding: 2em 1em;
+    margin: 0 10px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.owl-carousel .trainercard-img {
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    border: 5px solid rgb(83, 6, 6);
+    box-shadow: 0 0 2em;
+    padding: 3px;
+    margin-bottom: 2em;
+}
+
+.owl-carousel .trainercard-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.owl-carousel .trainercard-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    position: relative;
+    top: .2em;
+    display: block; 
+}
+
+.owl-carousel .trainercard-name {
+    color: rgb(83, 6, 6);
+    display: block; 
+    margin-top: .5em; 
+}
+
+.owl-carousel .trainercard-text {
+    font-size: 1.1rem;
+    margin: 1em 0;
+    color: rgb(94, 93, 93);
+}
+
+.owl-carousel .trainercard-button {
+    background-color: rgb(83, 6, 6);
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+    padding: .5em;
+    border-radius: .5em;
+    margin-top: .5em;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.owl-carousel .trainercard-button:hover {
+    transform: scale(1.1);
+    background-color: rgba(83, 6, 6, 0.833); 
+}
+
+/*TRAINERS CARD SLIDER FINISH*/
+
+
+/* announcment STYLES */
